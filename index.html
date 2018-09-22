@@ -3,14 +3,16 @@
   <head>
     <meta charset="utf-8">
     <title>Merkury</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     <link rel="stylesheet" href="resources/css/reset.css">
     <link rel="stylesheet" href="resources/css/style.css">
+    <link rel="icon" href="resources/images/favicon.ico" type="image/x-icon">
   </head>
   <body>
 
     <!--Header-->
 
-    <header>
+    <header class="container">
       <div class="header">
         <div class="logo">
           <img src="resources/images/logo.png" alt="Merkury Logo">
@@ -29,59 +31,63 @@
 
     <!--Banner-->
 
-    <section class="banner">
+    <section class="banner container">
       <div class="banner-text">
         <h1>Grow Your business with Merkury</h1>
         <h2>Your partner in crime!</h2>
-        <span>Get started</span>
+        <span><a href="#">Get started</a></span>
+        <div class="banner-image"> <!--Images split in two for the sake of hiding shadow on white space-->
+          <img src="resources/images/merkury-home-top.png" alt="" id="top">
+          <img src="resources/images/merkury-home-bot.png" alt="">
+        </div>
       </div>
     </section>
 
     <!--Features-->
 
-    <section class="features">
+    <section class="features container">
       <div class="features-block">
         <div class="feature">
           <img src="resources/images/manage.png" alt="">
           <h3>Manage Your Workflow</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur<br>adipisicing elit, sed do eiusmod tempor<br>incididunt ut labore et dolore magna aliqua.</p>
           <span>See more</span>
         </div>
         <div class="feature">
           <img src="resources/images/analytics.png" alt="">
           <h3>Analytics &amp; Insights</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur<br>adipisicing elit, sed do eiusmod tempor<br>incididunt ut labore et dolore magna aliqua.</p>
           <span>See more</span>
         </div>
         <div class="feature">
           <img src="resources/images/organize.png" alt="">
           <h3>Organize Your Deadlines</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur<br>adipisicing elit, sed do eiusmod tempor<br>incididunt ut labore et dolore magna aliqua.</p>
           <span>See more</span>
         </div>
       </div>
     </section>
 
-    <!--Mobile section-->
+    <!--tablet section-->
 
-    <section class="mobile">
-      <div class="mobile-block">
-        <div class="mobile-text">
+    <section class="tablet container">
+      <div class="tablet-block">
+        <div class="tablet-text">
           <h2>All  You need is a browser!</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-          <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-          <div class="mobile-list-checked">
-            <div class="mobile-list-checked-point">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod<br>tempor incididunt ut labore et dolore magna aliqua.</p>
+          <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi<br>ut aliquip ex ea commodo consequat. </p>
+          <div class="tablet-list-checked">
+            <div class="tablet-list-checked-point">
               <img src="resources/images/checked.png" alt="">
               <p>Lorem ipsum dolor sit amet consectetur</p>
             </div>
-            <div class="mobile-list-checked-point">
+            <div class="tablet-list-checked-point">
               <img src="resources/images/checked.png" alt="">
               <p>Ut enim ad minim veniam quis nostrud</p>
             </div>
           </div>
         </div>
-        <div class="mobile-picture">
+        <div class="tablet-picture">
           <img src="resources/images/tab.png" alt="">
         </div>
       </div>
@@ -89,38 +95,41 @@
 
     <!--Workflow section-->
 
-    <section class="workflow">
+    <section class="workflow container">
       <div class="workflow-block">
         <div class="workflow-image">
           <img src="resources/images/workflow.png" alt="">
         </div>
         <div class="workflow-text">
-          <h3>Drag &amp; Drop</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-          <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+          <h2>Drag &amp;  Drop</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do<br>eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco<br>laboris nisi ut aliquip ex ea commodo consequat. </p>
+          <img src="resources/images/arrow-left.png" alt="">
+          <img src="resources/images/arrow-right.png" alt="">
         </div>
+
       </div>
     </section>
 
     <!--Template section-->
 
-    <section class="template">
+    <section class="template container">
       <div class="template-block">
         <div class="template-title">
-          <h1>Powerful PSD Template</h1>
+          <h2>Powerful PSD Template</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
           <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
         </div>
         <div class="template-content">
-          <div class="template-content-item">
+          <div class="template-content-item" id="template-left">
             <h4>Clean &amp; modern layout</h4>
             <img src="resources/images/pointer-left.png" alt="">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</p>
+            <p>Lorem ipsum dolor sit amet,<br>consectetur adipisicing elit,<br>sed do eiusmod tempor</p>
           </div>
-          <div class="template-content-item">
+          <div class="template-content-item" id="template-right">
             <h4>Easy to customize</h4>
             <img src="resources/images/pointer-right.png" alt="">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</p>
+            <p>Lorem ipsum dolor sit amet,<br>consectetur adipisicing elit,<br>sed do eiusmod tempor</p>
           </div>
         </div>
       </div>
@@ -128,13 +137,13 @@
 
     <!--Pricing section-->
 
-    <section class="pricing">
+    <section class="pricing container">
       <div class="pricing-block">
-        <h1>Check our pricing!</h1>
+        <h2>Check our pricing!</h2>
         <div class="pricing-plans">
           <div class="pricing-plan">
             <h5>BRONZE PLAN</h5>
-            <p><span>$19</span>/mon</p>
+            <p class="dollar"><span id="dollar">$</span><span>19</span>/mon</p>
             <div class="plan-feature">
               <img src="resources/images/checked.png" alt="">
               <p>Lorem ipsum dolor sit am</p>
@@ -154,7 +163,7 @@
           </div>
           <div class="pricing-plan">
             <h5>SILVER PLAN</h5>
-            <p><span>$49</span>/mon</p>
+            <p class="dollar"><span id="dollar2">$</span><span>49</span>/mon</p>
             <div class="plan-feature">
               <img src="resources/images/checked.png" alt="">
               <p>Lorem ipsum dolor sit am</p>
@@ -174,7 +183,7 @@
           </div>
           <div class="pricing-plan">
             <h5>GOLD PLAN</h5>
-            <p><span>$99</span>/mon</p>
+            <p class="dollar"><span id="dollar3">$</span><span>99</span>/mon</p>
             <div class="plan-feature">
               <img src="resources/images/checked.png" alt="">
               <p>Lorem ipsum dolor sit am</p>
@@ -193,15 +202,19 @@
             </div>
           </div>
         </div>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
-        <span>Join now!</span>
+        <div class="pricing-explanation">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
+          <p>magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+        </div>
+        <div class="pricing-button">
+          <span>Join now!</span>
+        </div>
       </div>
     </section>
 
     <!--Footer-->
 
-    <footer>
+    <footer class="container">
       <div class="footer-block">
         <div class="copyright">
           <p>&copy; 2018 ViperART All Rights Reserved</p>
@@ -211,9 +224,9 @@
             <li><a href="#">Pricing</a></li>
             <li><a href="#">Blog</a></li>
             <li><a href="#">Contact</a></li>
-            <p>icon1</p>
-            <p>icon2</p>
-            <p>icon3</p>
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-google-plus-g"></i>
           </ul>
         </div>
       </div>
